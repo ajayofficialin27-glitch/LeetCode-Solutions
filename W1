@@ -1,0 +1,17 @@
+#include <iostream>
+
+int main() {
+    int year;
+    
+    // Take input from the user
+    std::cin >> year;
+    
+    // Leap year logic
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+        std::cout << "Yes it is a leap year" << std::endl;
+    } else {
+        std::cout << "No it is not a leap year" << std::endl;
+    }
+    
+    return 0;
+}
